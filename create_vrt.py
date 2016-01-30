@@ -10,18 +10,15 @@ Takes 3 arguments
 Created by Klas Karlsson 2016-01-30
 """
 
-
-
 import arcpy, subprocess
-from subprocess import call  
 
 # Get parameters from GUI
 InFolder = arcpy.GetParameterAsText(0)
-arcpy.AddMessage("Folder: " + InFolder)  
+arcpy.AddMessage("Source Folder: " + InFolder)  
 InType = arcpy.GetParameterAsText(1)  
-arcpy.AddMessage("Type: " + InType)
+arcpy.AddMessage("File Type: " + InType)
 VrtFile = arcpy.GetParameterAsText(2)
-arcpy.AddMessage("Output: " + VrtFile)  
+arcpy.AddMessage("Output VRT: " + VrtFile)  
 
 # Create Call String
 CallString = "gdalbuildvrt " + VrtFile + " " + InFolder + "\\*." + InType  
