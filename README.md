@@ -8,4 +8,4 @@ You also need to make sure that the PATH to the *gdalbuildvrt.exe* file is in yo
 ## Install
 1. Download and unzip files.
 2. *Add Toolbox...* in ArcMap/ArcToolbox
-3. Make Toolbox permanent by right click *Save Settings - To Default*
+3. Make Toolbox permanent by right click and *Save Settings - To Default*
